@@ -18,6 +18,7 @@ var IceCreamCollection = Backbone.Collection.extend({
   comparator: function(model){
     // Backbone collecitons can have a comparator method that lets
     // backbone sort models in the collection
+    console.log('comparator');
     return -model.popularity();
   }
 });

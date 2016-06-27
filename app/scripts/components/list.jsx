@@ -45,11 +45,10 @@ var IceCreamListComponent = React.createClass({
     });
   },
   update: function(){
+    this.props.collection.sort();
     this.forceUpdate();
   },
   render: function(){
-    console.log(this.props);
-
     // We can build an array of compoents and then render them as a list
     var flavorList = this.props.collection.map(function(flavor){
       // We can use react components in JSX and pass them properties (props)
